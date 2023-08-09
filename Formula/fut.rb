@@ -6,6 +6,8 @@ class Fut < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/fusionlanguage/fut.git", branch: "master"
 
+  depends_on "gcc" => :build
+
   fails_with :clang do
     cause "Missing std::format"
   end
