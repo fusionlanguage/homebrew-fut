@@ -13,7 +13,7 @@ class Fut < Formula
   end
 
   def install
-    system "make"
+    system "make CXXFLAGS='-Wall -O2 -ld_classic'"
     bin.install "fut"
   end
 
