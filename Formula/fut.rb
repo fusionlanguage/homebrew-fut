@@ -6,14 +6,8 @@ class Fut < Formula
   license "GPL-3.0-or-later"
   head "https://github.com/fusionlanguage/fut.git", branch: "master"
 
-  depends_on "gcc" => :build
-
-  fails_with :clang do
-    cause "Missing std::format"
-  end
-
   def install
-    system "make CXXFLAGS='-Wall -O2 -ld_classic'"
+    system "make CXXFLAGS='-std=c++20 -Wall -O2'"
     bin.install "fut"
   end
 
