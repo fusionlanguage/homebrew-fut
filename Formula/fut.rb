@@ -1,8 +1,8 @@
 class Fut < Formula
   desc "Fusion Transpiler"
   homepage "https://github.com/fusionlanguage/fut"
-  url "https://github.com/fusionlanguage/fut/archive/refs/tags/fut-3.3.4.tar.gz"
-  sha256 "ecfe8562dd653ca82eb39c531de47d34fe8624fac3f6d70573eb9ff1777fdb8d"
+  url "https://github.com/fusionlanguage/fut/archive/refs/tags/fut-3.3.5.tar.gz"
+  sha256 "db7c1b9ce76d28e5c0cad1de4242c58adac9c37d3350af43808772a2eb91a6eb"
   license "GPL-3.0-or-later"
   head "https://github.com/fusionlanguage/fut.git", branch: "master"
 
